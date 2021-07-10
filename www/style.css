@@ -1,0 +1,377 @@
+
+
+
+
+
+body {
+    display: flex;
+    height: 90vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: rgb(189, 183, 183);
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: fixed;
+    width: 100%;
+
+}
+
+html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    position: fixed;
+}
+
+canvas {
+    background-color: black;
+    z-index: 1;
+}
+
+.backgroundStartScreen {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#startScreen {
+    position: absolute;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    object-fit: cover;
+    width: 100%;
+    position: fixed;
+}
+
+.topSide {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.startBtn {
+    height: 7vh;
+    position: absolute;
+}
+
+.content {
+    height: 580px;
+    width: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.gameScreen {
+    display: flex;
+    position: absolute;
+}
+
+.arrowKey {
+    display: flex;
+    align-items: center;
+    background-color: #ff9800;
+    border-radius: 10px;
+}
+
+#canvas {
+    width: 100%;
+    /* object-fit: contain; */
+}
+
+.arrowImg {
+    height: 7vh;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.moveTitle {
+    height: 3vh;
+    width: 20vh;
+    margin-right: 20px;
+}
+
+.keys img {
+    height: 4vh;
+    display: flex;
+    object-fit: contain;
+}
+
+.keys {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.atackKey {
+    display: flex;
+    background-color: #f44336;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.atackTitle {
+    height: 3vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.top {
+    height: 5vh;
+    width: 100%;
+}
+
+.iconFullScreen {
+    height: 5vh;
+    cursor: pointer;
+}
+
+.fullScreen {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.handbook {
+    z-index: 1;
+    position: absolute;
+    margin-left: 3vw;
+    height: 13vh;
+}
+
+
+
+.d-none {
+    display: none !important;
+}
+
+.bottom {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#gameExplanation {
+    width: 100%;
+    height: inherit;
+    z-index: 3;
+    background-color: #000000;
+    position: absolute;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+.spaceBar {
+    height: 5vh;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.atackWithSpace {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.keyD {
+    height: 5vh;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.atackWithBubble {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.bubbleAtackTitle {
+    height: 12vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.specialBubble {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.spaceAndD {
+    height: 17vh;
+    margin-left: 10px;
+    margin-right: 90px;
+}
+
+.specialAtack {
+    height: 14vh;
+    margin-left: -90px;
+    margin-right: 10px;
+    margin-top: 10vh;
+}
+
+.toFinalBoss {
+    margin-top: 14vh;
+}
+
+h2 {
+    color: red;
+    font-size: 2em;
+}
+
+.pufferFish {
+    height: 9vh;
+    object-fit: cover;
+    margin-left: 30px;
+}
+
+.jellyFish {
+    height: 15vh;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.endBoss {
+    height: 25vh;
+    margin-left: 30px;
+}
+
+.closeButton {
+    height: 8vh;
+    object-fit: cover;
+    position: absolute;
+    padding: 0.5rem;
+    
+    
+}
+
+.titleSpecialBubble {
+    display: flex;
+    flex-direction: column;
+}
+
+#newStart {
+    position: absolute;
+    z-index: 2;
+    height: 6vh;
+    margin-top: 35vh;
+    cursor: pointer;
+}
+
+
+#touchControl {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.touchMoveControl img {
+    height: 6vh;
+    object-fit: contain;
+}
+
+.touchMoveControl {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+    margin-bottom: 2vh;
+}
+
+.touchAtackControl img {
+    height: 6vh;
+    object-fit: contain;
+}
+
+.touchAtackControl {
+    display: flex;
+    height: 15vh;
+    margin-right: 3vw;
+    margin-bottom: 2vh;
+}
+
+.atackTop {
+    display: flex;
+    align-items: flex-end;
+}
+
+.atackMiddle {
+    display: flex;
+    align-items: center;
+}
+.atackBottom {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tryAgain {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sound_icon {
+    height: 12vh;
+    margin-top: 2vh;
+}
+
+.soundMenu {
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #ffffff;
+}
+
+.soundSettings {
+    display: flex;
+    margin-top: 5vh;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.soundSettings img {
+    background-color: #2196f3;
+    height: 8vh;
+}
+
+.musicSettings {
+    display: flex;
+    margin-top: 5vh;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.musicSettings img {
+    background-color: #f44336;
+    height: 8vh;
+}
